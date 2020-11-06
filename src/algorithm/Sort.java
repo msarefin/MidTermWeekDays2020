@@ -63,7 +63,7 @@ public class Sort extends helper {
         int[] list = array;
         //implement here
         for (int i = 0; i < array.length; i++) {
-            for (int j = 0; j > array.length - 1; j++) {
+            for (int j = 0; j < array.length - 1; j++) {
                 if (array[j] > array[j + 1]) {
                     swap(array, j, j + 1);
                 }
@@ -75,7 +75,6 @@ public class Sort extends helper {
         this.executionTime = executionTime;
         return list;
     }
-
 
     public int[] mergeSort(int[] array) {
         long startTime = System.currentTimeMillis();
@@ -114,7 +113,7 @@ public class Sort extends helper {
                 }
             }
             while (i < left.length) {
-                arr[k++] = left[i];
+                arr[k++] = left[i++];
             }
             while (j < right.length) {
                 arr[k++] = right[j++];
@@ -122,12 +121,11 @@ public class Sort extends helper {
         }
     }
 
-
     public int[] quickSort(int[] array) {
         long startTime = System.currentTimeMillis();
         int[] list = array;
         //implement here
-        qSort(array, 0, array.length);
+        qSort(array, 0, array.length - 1);
         final long endTime = System.currentTimeMillis();
         final long executionTime = endTime - startTime;
         this.executionTime = executionTime;
@@ -135,17 +133,19 @@ public class Sort extends helper {
     }
 
     final void qSort(int[] arr, int low, int high) {
-        int pivotIndex = new Random().nextInt((high - low) + 1) + low;
-        swap(arr, pivotIndex, high);
-        int b = 0;
-        for (int i = b; i < high; i++) {
-            if (arr[i] > arr[high]) {
-                swap(arr, i, b++);
+        if (low < high) {
+            int pivotIndex = new Random().nextInt((high - low) + 1) + low;
+            swap(arr, pivotIndex, high);
+            int b = low;
+            for (int i = b; i < high; i++) {
+                if (arr[i] < arr[high]) {
+                    swap(arr, i, b++);
+                }
             }
+            swap(arr, b, high);
+            qSort(arr, low, b - 1);
+            qSort(arr, b + 1, high);
         }
-        swap(arr, b, high);
-        qSort(arr, low, b - 1);
-        qSort(arr, b + 1, high);
     }
 
     public int[] heapSort(int[] array) {
@@ -251,7 +251,7 @@ public class Sort extends helper {
                 }
             }
             for (int n : array) {
-                if (n > 0) {
+                if (n >= 0) {
                     int bi = (n * nBucket.length) / (max + 1);
                     pBucket[bi].add(n);
                 }
@@ -273,27 +273,27 @@ public class Sort extends helper {
 
         int index = 0;
 
-        if(nBucket!=null){
-            for(int i = nBucket.length-1; i>=0; i--){
-                for(int j = 0; j< nBucket[i].size(); j++){
-                    array[index++] = (int)nBucket[i].get(j);
+        if (nBucket != null) {
+            for (int i = nBucket.length - 1; i >= 0; i--) {
+                for (int j = 0; j < nBucket[i].size(); j++) {
+                    array[index++] = (int) nBucket[i].get(j);
                 }
             }
         }
-        if(pBucket!= null){
-            for(List pbkt : pBucket){
-                for(int i =0; i< pbkt.size(); i++ ){
-                    array[index++] = (int)pbkt.get(i);
+        if (pBucket != null) {
+            for (List pbkt : pBucket) {
+                for (int i = 0; i < pbkt.size(); i++) {
+                    array[index++] = (int) pbkt.get(i);
                 }
             }
         }
 
 
-    final long endTime = System.currentTimeMillis();
-    final long executionTime = endTime - startTime;
-        this.executionTime =executionTime;
+        final long endTime = System.currentTimeMillis();
+        final long executionTime = endTime - startTime;
+        this.executionTime = executionTime;
         return list;
-}
+    }
 
     public int[] shellSort(int[] array) {
         long startTime = System.currentTimeMillis();
@@ -301,13 +301,13 @@ public class Sort extends helper {
         //implement here
 
         int n = array.length;
-        for(int g = n/2; g>=0; g/=2){
-            for(int i = g; i<n; i++){
+        for (int g = n / 2; g > 0; g /= 2) {
+            for (int i = g; i < n; i++) {
                 int t = array[i];
-                int j = i-g;
-                while(j>=0 && array[j]>t){
-                    array[j] = array[j-g];
-                    j-=g;
+                int j = i;
+                while (j >= g && array[j - g] > t) {
+                    array[j] = array[j - g];
+                    j -= g;
                 }
                 array[j] = t;
             }
