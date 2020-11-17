@@ -1,36 +1,32 @@
 Please answer the below Data Structure Questions:
 
-why do we need data structure?
-A.
-
-
-What are the various operations that can be performed on different Data Structures?
-List out the areas in which data structures are applied extensively?
-what is an Array?
-what is the difference between the Array and ArrayList?
-what is LinkedList?
-How is an Array different from Linked List?
-what is queue?
-what is stack?
-what is FIFO and LIFO?
-what is the order of complexity?
-what is the best case to search an element from an array?
-what is the worst case to search an element from an array?
-what is tree in data structure?
-what is graph in data structure?
-what is the difference between the HashTable and HashMap?
-What are the major data structures used in the following areas : RDBMS, Network data model and Hierarchical data model.
-How HashMap works in java?
-What is ArrayIndexOutOfBoundsException in java? When it occurs?
-What are the different ways of copying an array into another array?
-What is difference between an array and a linked list?
-What is DFS and BFS?
-What is Recursion?
-What are linear and non linear data Structures?
-What is Big-(O)-notation?
-Outlined different kind of sorting algorithm with time complexity?
-
-Draw a table with time complexity in which it will summarize all the data structure feature's advantages and disadvantages.
+1.  why do we need data structure?
+2.  What are the various operations that can be performed on different Data Structures?
+3.  List out the areas in which data structures are applied extensively?
+4.  what is an Array?
+5.  what is the difference between the Array and ArrayList?
+6.  what is LinkedList?
+7.  How is an Array different from Linked List?
+8.  what is queue?
+9.  what is stack?
+10. what is FIFO and LIFO?
+11. what is the order of complexity?
+12. what is the best case to search an element from an array?
+13. what is the worst case to search an element from an array?
+14. what is tree in data structure?
+15. what is graph in data structure?
+16. what is the difference between the HashTable and HashMap?
+17. What are the major data structures used in the following areas : RDBMS, Network data model and Hierarchical data model.
+18. How HashMap works in java?
+19. What is ArrayIndexOutOfBoundsException in java? When it occurs?
+20. What are the different ways of copying an array into another array?
+21. What is difference between an array and a linked list?
+22. What is DFS and BFS?
+23. What is Recursion?
+24. What are linear and non linear data Structures?
+25. What is Big-(O)-notation?
+26. Outlined different kind of sorting algorithm with time complexity?
+27. Draw a table with time complexity in which it will summarize all the data structure feature's advantages and disadvantages.
   a)In terms of Accessing element.
   b)In terms of Inserting element.
   c)In terms of Searching element.
