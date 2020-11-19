@@ -4,7 +4,6 @@
     <list default="true" id="b533036d-9a6c-47ac-a051-580b895fa47b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/definition/core-java-conceptual-questions" beforeDir="false" afterPath="$PROJECT_DIR$/src/definition/core-java-conceptual-questions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/definition/data-structure-questions" beforeDir="false" afterPath="$PROJECT_DIR$/src/definition/data-structure-questions" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,6 +111,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="435" y="187" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1604345119872" />
+    <state x="461" y="165" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605584780076">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="461" y="165" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1605584780076" />
     <state x="531" y="253" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1604164349508">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

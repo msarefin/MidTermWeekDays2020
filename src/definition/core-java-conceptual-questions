@@ -79,21 +79,35 @@ Please answer the below core-java Questions:
 37. How java manage it's memory?
     - java manages the JVM memory with the help of the garbage collector. JVM load the .class file using the class loader and loads all reference variables, methods and objects into JVM memory to be used. Once they are no longer needed they are cleared from memory with the help of the garbage collector.
 38. What is the difference between String, StringBuffer and StringBuilder?
-    -
+    - String is immutable where as StringBuffer and StringBuilder are mutable. StringBuffer is synchronized and thread safe where are StringBuilder is non-synchronized and not thread safe.
 39. What is Singleton class?
+    - Singleton class is used to ensure that there can only be one instance of a given class. this is achieved by making constructor private and creating a getter class that returns the object of the singleton class. A reference variable is created and the getter method is called directly using the singleton class without creating an object as the getter method can create the object.
 40. What is Serialization and Deserialization?
+    - Serialization if the process by which the object is converted into a sequence of bytes that can be stored into disk or a database. Deserialization is the process of converting the sequence of bytes back to the object.
 41. when to use transient variable in java?
+    - During serialization of you don't want a variable to participate in serialization process you can declare it using the transient keyword. During serialization the variable will simply take on it's default value.
 42. Difference between while and do..while loop?
+    - Do-While loop will execute the loop at least once regardless of the condition being false
 43. What is Enum?
+    - enum is special class that hold a group of constants. Enum can be defined both outside and inside a class but outside a method
 44. What is Iterator?
+    Iterator is an interface. Objects of iterator is used to iterator through the elements of Collection framework.
 45. Which one will take more memory, an int or Integer?
+    - Integer occupies more memory than int
 46. Why is String Immutable in Java?
+    - String is immutable for better caching, security, synchronization and performance
 47. What is constructor chaining in Java?
+    - Constructor chaining is the process of calling one constructor from another constructor. It is normally achieved using this() in the same class and Super() from the child class to call the parent class constrictor. Constrictor chaining occurs during inheritance.
 48. The difference between Serial and Parallel Garbage Collector?
+    - Serial garbage collection is a single thread garbage collection and freezes all application threads when it runs. So, serial garbage is not ideal for multi-threaded application. Parallel garbage collection, on the other hand uses multiple threads but also freezes other application threads while performing garbage collection. Using parallel garbage collection allows to specify .the maximum garbage collection threads and pause time, through put and heap size
 49. What is JIT stands for?
+    - JIT stands for just in time compiler
 50. Explain Java Heap space and Garbage collection?
+    - in java objects reside in the heap memory which is created when JVM starts and can increase and decrease in size when the application runs. When heap becomes full or the object is no longer needed, garbage is collected to clear memory.
 51. Can you guarantee the garbage collection process?
+    - Garbage collection cannot be guaranteed or enforced. garbage collector method can be explicitly called but cannot be guaranteed to collect garbage if the object is still needed
 52. What is the difference between stack and heap in Java?
+    -
 53. What is reflection in java and why is it useful?
 54. what is multithreading in java?
 55. What is the use of synchronization in Java?
