@@ -107,11 +107,15 @@ Please answer the below core-java Questions:
 51. Can you guarantee the garbage collection process?
     - Garbage collection cannot be guaranteed or enforced. garbage collector method can be explicitly called but cannot be guaranteed to collect garbage if the object is still needed
 52. What is the difference between stack and heap in Java?
-    -
+    - stack contains values that are specific to methods and reference to objects that are in a heap. Stack follows LIFO method of access. When Methods finish execution its corresponding stack frame is flushed, the flow goes back to the calling method and space becomes available for the next method. Heap space is use for dynamic memory allocation of java objects and JRE classes at runtime. New objects are always crated in heap space and the references to the object are stored in stack memory. Heap memory is broken down into three parts: The young generation hold new objects until they pass the threshold and moves to the old generation. Permanent generation hold JVM metadata for runtime classes and application methods.
 53. What is reflection in java and why is it useful?
+    - Reflection in an API in JAVA found in java.lang.reflect package and is used to modify the behaviour of the method, class and and interface at runtime. Reflect also gives information about the classes to which an object belongs and methods that can be executed using the object. Reflect also invokes methods at runtime irrespective of access specifiers. Methods involved are getClass(), getConstructor(), getMethod().
 54. what is multithreading in java?
+    - Multithreading is a feature that allows the concurrent execution of two or more parts of a program for maximum CPU utilization.
 55. What is the use of synchronization in Java?
+    - Synchronized keyword in java is used in java to provide mutually exclusive access to shared resources with multiple threads. Synchronization in java guarantees that not two threads can execute a synchronized method which require the same lock concurrently.
 56. What is Framework?
+    - 
 57. What are the testing Framework available in java?
 58. Difference between jUnit and testNG?
 59. What are the dependencies for this project?
