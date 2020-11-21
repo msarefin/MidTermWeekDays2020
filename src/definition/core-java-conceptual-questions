@@ -125,12 +125,4 @@ Please answer the below core-java Questions:
 60. what is dependency injection in java?
     - Dependency injection is the concept in which objects get other required objects from outside.
 61. What is static binding and dynamic binding?
-    - Associating a method call to the method body is known as binding. Static binding occurs during compile time and dynamic binding occurs at runtime .During inheritance between parent class and child class if the same method exist in both parent and child classes with the static, private or final keywords the the
-
-
-
-
-
-
-
-
+    - Associating a method call to the method body is known as binding. Static binding occurs during compile time and dynamic binding occurs at runtime .During inheritance between parent class and child class, if the same method exist in both parent and child classes with the static, private or final keywords, the object of the child class calling the method will only match the body of the method from the parent class. This is known as static binding and happens at compile time. If the methods are not static, final or private them the method calls made by the object are bound to the class they refer to. This is known as Dynamic and it happens at runtime.
