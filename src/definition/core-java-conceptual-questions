@@ -115,12 +115,17 @@ Please answer the below core-java Questions:
 55. What is the use of synchronization in Java?
     - Synchronized keyword in java is used in java to provide mutually exclusive access to shared resources with multiple threads. Synchronization in java guarantees that not two threads can execute a synchronized method which require the same lock concurrently.
 56. What is Framework?
-    - 
+    - A software framework is a platform for developing software applications. software framework provides a foundation on which software developers can build programs for a specific platform.
 57. What are the testing Framework available in java?
+    - JUnit, TestNg, JBehave
 58. Difference between jUnit and testNG?
+    - TestNG has more features compared to jUnit
 59. What are the dependencies for this project?
+    - The dependencies of this project are mysql jdbc, Apache POI, Google Sheets Reader, java JSON, MongoDB and TestNG
 60. what is dependency injection in java?
+    - Dependency injection is the concept in which objects get other required objects from outside.
 61. What is static binding and dynamic binding?
+    - Associating a method call to the method body is known as binding. Static binding occurs during compile time and dynamic binding occurs at runtime .During inheritance between parent class and child class if the same method exist in both parent and child classes with the static, private or final keywords the the
 
 
 
