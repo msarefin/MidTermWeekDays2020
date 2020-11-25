@@ -1,36 +1,58 @@
 Please answer the below Data Structure Questions:
 
-why do we need data structure?
-A.
-
-
-What are the various operations that can be performed on different Data Structures?
-List out the areas in which data structures are applied extensively?
-what is an Array?
-what is the difference between the Array and ArrayList?
-what is LinkedList?
-How is an Array different from Linked List?
-what is queue?
-what is stack?
-what is FIFO and LIFO?
-what is the order of complexity?
-what is the best case to search an element from an array?
-what is the worst case to search an element from an array?
-what is tree in data structure?
-what is graph in data structure?
-what is the difference between the HashTable and HashMap?
-What are the major data structures used in the following areas : RDBMS, Network data model and Hierarchical data model.
-How HashMap works in java?
-What is ArrayIndexOutOfBoundsException in java? When it occurs?
-What are the different ways of copying an array into another array?
-What is difference between an array and a linked list?
-What is DFS and BFS?
-What is Recursion?
-What are linear and non linear data Structures?
-What is Big-(O)-notation?
-Outlined different kind of sorting algorithm with time complexity?
-
-Draw a table with time complexity in which it will summarize all the data structure feature's advantages and disadvantages.
+1.  why do we need data structure?
+    - A data structure is a particular way of organizing data in a computer so that it can be use efficiently.
+2.  What are the various operations that can be performed on different Data Structures?
+    - Various operations that can be performed on data structure are create, insert delete, searching, sorting , traversing , merging, appending and updating
+3.  List out the areas in which data structures are applied extensively?
+    - Compiler design, operating system, database management system, statistical analysis package, numerical analysis, graphics, artificial intelligence, and simulations
+4.  what is an Array?
+    - Array is an object which contains elements of similar data type. Array is a dat structure that stores similar elements. Arrays can only store a fixed number of elements determined at the time of declaration.
+5.  what is the difference between the Array and ArrayList?
+    - Array is a data structure that hold only a fixed number of element determined at declaration. Arraylist on the other hand is a class that implements the List interface which is part of the collection framework. Unlike array, ArrayList has a number of methods that can support it.
+6.  what is LinkedList?
+    - LinkedList was introduced in java 1.5; is a class that implements the List interface and Queue interface, and is a member of the collection framework. Linked list used doubly linked list to internally to store elements and can store duplicate elements. Linked list maintains insertion order. It is non-synchronized and data manipulation fast
+7.  How is an Array different from LinkedList?
+    - Array is not a member of the collection framework where as LinkedList is a class. arrays can only hold data of the same type LinkedList can hold element of various data type. in array you can access the data using index numbers. In LinkedList you need to traverse through the entire list to get to the element you want. So accessing elements in array is faster that LinkedList. In array elements are stored based on index numbers. In linkedList elements are stored randomly. Array requires less memory but has inefficient memory utilization. LinkedList requires more memory but has better memory utilization.
+8.  what is queue?
+    - Queue is an interface that implements the Collection interface. Queue manipulated element in FIFO order.
+9.  what is stack?
+    - Stack is the child class of vector class that implements the List interface. List manipulates data in LIFO order.
+10. what is FIFO and LIFO?
+    - FIFO - Fist In First Out. LIFO - Last In First Out.
+11. what is the order of complexity of algorithm?
+    - Algorithms have asymptotic complexity. Assuming that the input is of size N the algorithms will finish at O(N), O(N^2), O(N^3), O(N*Log(N)) etc. This means that certain mathematical expression of the size of inout, and the algorithm finishes between two factors of it.
+12. what is the best case to search an element from an array?
+    - O(n)
+13. what is the worst case to search an element from an array?
+    - O(n)
+14. what is tree in data structure?
+    - Tree is a non-linear data structure where elements are represented in nodes which are connected to other nodes. The node at the top most is know as the parent node and the nodes connected to the parent node to the bottom are known as child nodes.
+15. what is graph in data structure?
+    - Graphs are non-linear data structure comprising a finite set of nodes and edges. The nodes are the elements and edges are ordered pairs of connections between the nodes.
+16. what is the difference between the HashTable and HashMap?
+    - HashMap is Synchronized and thread safe while HashTable is non-synchronized not thread safe. HashMap allows one null key and multiple null values where as Hashtable doesn't allow any null key or value. HashMap was introduces in java 1.2 HashTable is a legacy class. HashMap is fast where as HashTable us slow. HashMap can be made synchronized where HashTable is synchronized by default. HashMap is traversed using iterator where as HashTable can be traversed using iterator  and Enumerator. HashMap inherits AbstractMap class where as HashTable inherits Dictionary class.
+17. What are the major data structures used in the following areas : RDBMS, Network data model and Hierarchical data model.
+    - RDBMS use Array structure, Network data model use Graph and Hierarchical data model uses Tree structure
+18. How HashMap works in java?
+    - HashMap works using the concept of hashing. Hash map uses a key value pair to store data. HashMap allows only one null key.
+19. What is ArrayIndexOutOfBoundsException in java? When it occurs?
+    - ArrayIndexOutOfBoundException is an buffer overflow error that occurs when and array is accesses with an index number that is less than zero or greater than the last index of the array
+20. What are the different ways of copying an array into another array?
+    - You can copy an array to another array by manually copying each element into the new array using any of the loops. You can also use Arrays.copyOf(a, a.length), System.arraycopy(a,0, b,0, a.length), b = a.clone() where a and b are array objects.
+21. What is difference between an array and a linked list?
+    - Array stores data of similar type by index where as LinkedList stores data or various types in an unordered list. Accessing array elements is fast where as in linkedList is slow. inserting elements in an array is difficult and time conduming because elements needs to be shifted where as inserting elements into LinkedList is easy and fast since no elements need to be sifted. Array memory is assigned during compile time where as linkedList memory is assigned during runtime. Array needs less memory since data is stored at the array index. ArraysList stores reference to next and previous elements along with the actual elements so more memory is required. Additional memory utilization is inefficient in array memory utilization is efficient in LinkedList
+22. What is DFS and BFS?
+    -Depth First Search is an edge based technique. It uses Stack data structure two stages, first visit vertices and push into stack and second if there is no vertices then visited vertices are popped. Breadth First Search is a vertex based technique for finding a shortest path in graph. It uses queue data structure which follows FIFO.
+23. What is Recursion?
+    - Recursion is the process of continuously calling a method within itself.
+24. What are linear and non linear data Structures?
+    - Linear data structure is a data structure where data is stored indexed in linear fashion. Non- Linear data structure is a data structure where elements are not stored in a linear fashion based on the indexes
+25. What is Big-(O)-notation?
+    - Big O notation is a mathematical notation that that describes the limiting behaviour of a function when the argument tends towards particular value or infinity.
+26. Outlined different kind of sorting algorithm with time complexity?
+    - Bubble sort - O(n^2), Selection Sort O(n^2), Insertion sort O(n^2), Bucket Sort O(n^2), Merge Sort O(nLog(n)), Quick Sort O(nLog(n)), Heap Sort O(nLog(n)), Shell Sort O(nLog(n))
+27. Draw a table with time complexity in which it will summarize all the data structure feature's advantages and disadvantages.
   a)In terms of Accessing element.
   b)In terms of Inserting element.
   c)In terms of Searching element.

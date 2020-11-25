@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b533036d-9a6c-47ac-a051-580b895fa47b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_16.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-java-8.0.16.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MidTermWeekDaysDecember2019.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MidTermWeekDaysDecember2019.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MidTermWeekDaysDecember2019/definition/core-java-conceptual-questions" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MidTermWeekDaysDecember2019/definition/core-java-conceptual-questions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MidTermWeekDaysDecember2019/definition/data-structure-questions" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MidTermWeekDaysDecember2019/definition/data-structure-questions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MidTermWeekDaysDecember2019/secret.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MidTermWeekDaysDecember2019/secret.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithm/Numbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithm/Numbers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/definition/data-structure-questions" beforeDir="false" afterPath="$PROJECT_DIR$/src/definition/data-structure-questions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/secret.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/secret.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,10 +35,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1579131214053" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -42,18 +52,45 @@
       <recent name="math.problems" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sunsh\Documents\JavaProject\IdeaProjects\MidTermWeekDays2020\lib" />
       <recent name="G:\SOFTWARE ENGINEERING\PROJECTS\IdeaProjects\PNT\MidTermWeekDaysDecember2019\src" />
       <recent name="G:\SOFTWARE ENGINEERING\PROJECTS\IdeaProjects\PNT\MidTermWeekDaysDecember2019" />
       <recent name="G:\SOFTWARE ENGINEERING\PROJECTS\IdeaProjects\PNT\MidTermWeekDaysDecember2019\lib" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.UnitTestSorting">
+  <component name="RunManager" selected="Application.Numbers">
+    <configuration name="ConnectToSqlDB" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="databases.ConnectToSqlDB" />
+      <module name="MidTermWeekDaysDecember2019" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="databases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CsvReader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="codelab.status.CsvReader" />
       <module name="MidTermWeekDaysDecember2019" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="codelab.status.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Numbers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="algorithm.Numbers" />
+      <module name="MidTermWeekDaysDecember2019" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="algorithm.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -76,6 +113,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Numbers" />
+        <item itemvalue="Application.ConnectToSqlDB" />
         <item itemvalue="Application.UnitTestSorting" />
         <item itemvalue="Application.CsvReader" />
       </list>
@@ -118,22 +157,42 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="531" y="253" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1366.728@0.0.1366.728" timestamp="1604164349508" />
-    <state width="1323" height="178" key="GridCell.Tab.0.bottom" timestamp="1604674216293">
+    <state width="1323" height="178" key="GridCell.Tab.0.bottom" timestamp="1606152668611">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1604674216293" />
-    <state width="1323" height="178" key="GridCell.Tab.0.center" timestamp="1604674216293">
+    <state width="1323" height="178" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1606152668611" />
+    <state width="1877" height="178" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606117393774" />
+    <state width="1323" height="178" key="GridCell.Tab.0.center" timestamp="1606152668610">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1604674216293" />
-    <state width="1323" height="178" key="GridCell.Tab.0.left" timestamp="1604674216292">
+    <state width="1323" height="178" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1606152668610" />
+    <state width="1877" height="178" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606117393773" />
+    <state width="1323" height="178" key="GridCell.Tab.0.left" timestamp="1606152668608">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1604674216292" />
-    <state width="1323" height="178" key="GridCell.Tab.0.right" timestamp="1604674216293">
+    <state width="1323" height="178" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1606152668608" />
+    <state width="1877" height="178" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606117393773" />
+    <state width="1323" height="178" key="GridCell.Tab.0.right" timestamp="1606152668610">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1604674216293" />
+    <state width="1323" height="178" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1606152668610" />
+    <state width="1877" height="178" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606117393774" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1606117202527">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606117202527" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1606117202527">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606117202527" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1606117202526">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606117202526" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1606117202527">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606117202527" />
     <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1604164078458">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

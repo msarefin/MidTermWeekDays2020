@@ -51,7 +51,7 @@ Please answer the below Data Structure Questions:
 25. What is Big-(O)-notation?
     - Big O notation is a mathematical notation that that describes the limiting behaviour of a function when the argument tends towards particular value or infinity.
 26. Outlined different kind of sorting algorithm with time complexity?
-    - Bubble sort - O(n), Selection Sort, Insertion sort
+    - Bubble sort - O(n^2), Selection Sort O(n^2), Insertion sort O(n^2), Bucket Sort O(n^2), Merge Sort O(nLog(n)), Quick Sort O(nLog(n)), Heap Sort O(nLog(n)), Shell Sort O(nLog(n))
 27. Draw a table with time complexity in which it will summarize all the data structure feature's advantages and disadvantages.
   a)In terms of Accessing element.
   b)In terms of Inserting element.
