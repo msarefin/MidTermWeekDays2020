@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b533036d-9a6c-47ac-a051-580b895fa47b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_16.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-java-8.0.16.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MidTermWeekDaysDecember2019.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MidTermWeekDaysDecember2019.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MidTermWeekDaysDecember2019/definition/core-java-conceptual-questions" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MidTermWeekDaysDecember2019/definition/core-java-conceptual-questions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MidTermWeekDaysDecember2019/definition/data-structure-questions" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MidTermWeekDaysDecember2019/definition/data-structure-questions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MidTermWeekDaysDecember2019/secret.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MidTermWeekDaysDecember2019/secret.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithm/Numbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithm/Numbers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/definition/data-structure-questions" beforeDir="false" afterPath="$PROJECT_DIR$/src/definition/data-structure-questions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/secret.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/secret.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,41 +149,45 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="531" y="253" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1366.728@0.0.1366.728" timestamp="1604164349508" />
-    <state width="1323" height="178" key="GridCell.Tab.0.bottom" timestamp="1606152668611">
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1606328521471">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1606152668611" />
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1606328521471" />
     <state width="1877" height="178" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606117393774" />
-    <state width="1323" height="178" key="GridCell.Tab.0.center" timestamp="1606152668610">
+    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1606328521469">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1606152668610" />
+    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1606328521469" />
     <state width="1877" height="178" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606117393773" />
-    <state width="1323" height="178" key="GridCell.Tab.0.left" timestamp="1606152668608">
+    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1606328521468">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1606152668608" />
+    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1606328521468" />
     <state width="1877" height="178" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606117393773" />
-    <state width="1323" height="178" key="GridCell.Tab.0.right" timestamp="1606152668610">
+    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1606328521470">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1606152668610" />
+    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1606328521470" />
     <state width="1877" height="178" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606117393774" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1606117202527">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1606328521476">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1606328521476" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606117202527" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1606117202527">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1606328521474">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1606328521474" />
     <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606117202527" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1606117202526">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1606328521473">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1606328521473" />
     <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606117202526" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1606117202527">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1606328521475">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1606328521475" />
     <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606117202527" />
     <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1604164078458">
       <screen x="0" y="0" width="1366" height="728" />
