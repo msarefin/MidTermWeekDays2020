@@ -8,5 +8,6 @@ public class Anagram {
         //same character but in different order.For example,"CAT" and "ACT", "ARMY" and "MARY".
 
 
+        // The Code Goes here
     }
 }
