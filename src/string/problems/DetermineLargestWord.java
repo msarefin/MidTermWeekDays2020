@@ -20,6 +20,19 @@ public class DetermineLargestWord {
         Map<Integer, String> map = new HashMap<Integer, String>();
         String st = "";
         //implement
+        st = wordGiven.replaceAll("[\\W]"," ");
+        String [] words = st.split(" ");
+        int max = 0;
+        String longestWord = "";
+
+        for(String s: words) {
+            if (max < s.length()) {
+                max = s.length();
+                longestWord = s;
+            }
+        }
+        map.put(max, longestWord);
+
 
         return map;
     }
