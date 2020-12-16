@@ -8,7 +8,7 @@ public class Anagram {
         //same character but in different order.For example,"CAT" and "ACT", "ARMY" and "MARY".
     }
 
-    public static boolean anagram(String s1, String s2){
+    public static boolean isAnagram(String s1, String s2){
         if(s1.length()==s2.length()){
             char [] c1 = initializeChar(s1);
             char [] c2 = initializeChar(s2);
