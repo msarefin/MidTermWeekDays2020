@@ -30,7 +30,7 @@ public class CsvReader {
                 }
                 String[] name = line.split(cvsSplitBy);
 //                System.out.println(Arrays.toString(name));
-                roster.add(new Trainee(name[4].replace("\"", ""), name[5 ].replace("\"",
+                roster.add(new Trainee(name[4].replace("\"", ""), name[5].replace("\"",
                         ""), Integer.parseInt(name[8])));
 
             }
