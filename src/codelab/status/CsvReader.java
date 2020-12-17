@@ -24,13 +24,14 @@ public class CsvReader {
             br = new BufferedReader(new FileReader(csvFilePath));
             int lineNumber = 0;
             while ((line = br.readLine()) != null) {
-                if(lineNumber == 0) {
+                if(lineNumber <= 2) {
                     lineNumber++;
                     continue;
                 }
                 String[] name = line.split(cvsSplitBy);
-                roster.add(new Trainee(name[505].replace("\"", ""), name[15].replace("\"",
-                        ""), Integer.parseInt(name[20])));
+//                System.out.println(Arrays.toString(name));
+                roster.add(new Trainee(name[4].replace("\"", ""), name[5 ].replace("\"",
+                        ""), Integer.parseInt(name[8])));
 
             }
 

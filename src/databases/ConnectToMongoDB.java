@@ -10,7 +10,8 @@ import parser.Student;
 
 import java.util.ArrayList;
 import java.util.List;
-
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 
 public class ConnectToMongoDB {
@@ -95,7 +96,8 @@ public class ConnectToMongoDB {
     }
 
     public static void main(String[] args){
-        //insertIntoToMongoDB(new User("Naomi Chan", "4493","07-1996"));
+        Logger.getLogger("com.mongodb.driver").setLevel(Level.SEVERE);
+    //insertIntoToMongoDB(new User("Naomi Chan", "4493","07-1996"));
         List<User> user = readUserProfileFromMongoDB();
         for(User person:user){
             System.out.println(person.getStName()+ " "+ person.getStID());
