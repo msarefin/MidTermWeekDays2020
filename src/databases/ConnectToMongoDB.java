@@ -97,7 +97,7 @@ public class ConnectToMongoDB {
 
     public static void main(String[] args){
         Logger.getLogger("com.mongodb.driver").setLevel(Level.SEVERE);
-    //insertIntoToMongoDB(new User("Naomi Chan", "4493","07-1996"));
+    insertIntoToMongoDB(new User("Naomi Chan", "4493","07-1996"));
         System.out.println("just for test");
         List<User> user = readUserProfileFromMongoDB();
         for(User person:user){
