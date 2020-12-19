@@ -10,5 +10,26 @@ public class Factorial {
          *
          */
 
+        int Rresult = RecursiveFactorial(5);
+        int Iresult = IterativeFactorial(5);
+
+        System.out.println(Rresult);
+        System.out.println(Iresult);
+    }
+    public static int RecursiveFactorial(int n){
+      if(n==0){
+          return 1;
+      }else{
+          return n* RecursiveFactorial(n-1);
+      }
+    }
+
+    public static int IterativeFactorial(int n){
+        int r = n;
+        while(n>1){
+            n--;
+            r = r*(n);
+        }
+        return r;
     }
 }
