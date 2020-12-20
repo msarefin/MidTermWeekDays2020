@@ -1,8 +1,6 @@
 package datastructure;
 
-import java.util.Collection;
-import java.util.Collections;
-import java.util.HashMap;
+import java.util.*;
 
 public class CollectionView {
 
@@ -18,8 +16,20 @@ public static void main(String[] args) {
         map.put(5, "San Jose");
         map.put(6, "Seattle");
 
+        printMap(map);
 
+    }
 
+    public static void printMap(HashMap map){
+            Set set = map.entrySet();
+
+            Iterator it = set.iterator();
+            while(it.hasNext()){
+                    Map.Entry m = (Map.Entry)it.next();
+
+                    System.out.println(m.getKey()+" : "+m.getValue());
+
+            }
     }
 
 }

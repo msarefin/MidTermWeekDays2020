@@ -1,11 +1,19 @@
 package datastructure;
 
+import databases.ConnectToSqlDB;
+
+import java.io.*;
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
 public class DataReader {
 
 	public static void main(String[] args) {
 		/*
-		 * User API to read the below textFile and print to console.
-		 * Use BufferedReader class. 
+		 * Use API to read the below textFile and print to console.
+		 * Use BufferedReader class.
 		 * Use try....catch block to handle Exception.
 		 *
 		 * Use any databases[MongoDB, Oracle, MySql] to store data and retrieve data.
@@ -20,8 +28,45 @@ public class DataReader {
 
 		String textFile = System.getProperty("user.dir") + "/src/data/self-driving-car.txt";
 
-
+		List lines =  readingFile(textFile);
 
 	}
+
+	public static void mySQL(List lines){
+		try {
+			Connection connection = ConnectToSqlDB.connectToSqlDatabase();
+		} catch (IOException e) {
+			e.printStackTrace();
+		} catch (SQLException throwables) {
+			throwables.printStackTrace();
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public static List readingFile(String fileLocation) {
+		File file = new File(fileLocation);
+		try {
+			FileReader fr = new FileReader(file);
+			BufferedReader br = new BufferedReader(fr);
+			String line = null;
+			List lines = new ArrayList();
+			while ((line = br.readLine()) != null) {
+				lines.add(line);
+			}
+			br.close();
+			fr.close();
+			return lines;
+		} catch (FileNotFoundException exception) {
+			exception.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		finally{
+			System.gc();
+		}
+		return null;
+	}
+
 
 }
