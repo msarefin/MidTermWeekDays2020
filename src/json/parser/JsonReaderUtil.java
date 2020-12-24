@@ -12,6 +12,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class JsonReaderUtil {
@@ -50,16 +51,22 @@ public class JsonReaderUtil {
         } else if (root instanceof JsonArray) {
             jsonArray =  root.getAsJsonArray();
         }
+
         for (int i = 0; i < jsonArray.size()-1; i++) {
             try {
                 JsonObject jsonobject = jsonArray.get(i).getAsJsonObject();
                 //you code start here
                 String empEmail = jsonobject.get("empEmail").toString();
-                System.out.println(empEmail);
-
+                String empName = jsonobject.get("empName").toString();
+                String salary = jsonobject.get("salary").toString();
+                String department = jsonobject.get("department").toString();
+//                System.out.println(empEmail);
+                empList.add(new Employee(empEmail,empName, salary, department));
             }catch(Exception ex){
 
             }
+
+
         }
         //Print to the console.
         for(Employee entry:empList){

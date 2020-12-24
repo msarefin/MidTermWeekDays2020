@@ -13,12 +13,12 @@ public class FindLowestDifference {
         int [] array2 = {18,25,41,47,17,36,14,19};
 
 
-        lowerstDifference(array1, array2);
+        System.out.println(lowerstDifference(array1, array2));
 
 
     }
 
-    public static void lowerstDifference(int [] a1, int [] a2){
+    public static int  lowerstDifference(int [] a1, int [] a2){
         int ld = Integer.MAX_VALUE;
         new Sort().insertionSort(a1);
         new Sort().insertionSort(a2);
@@ -40,7 +40,7 @@ public class FindLowestDifference {
                 }
             }
         }
-        System.out.println(ld);
+        return ld;
     }
 
 }

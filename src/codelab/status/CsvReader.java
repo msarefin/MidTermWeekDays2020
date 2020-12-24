@@ -19,6 +19,8 @@ public class CsvReader {
         String cvsSplitBy = ",";
         BufferedReader br = null;
         List<Trainee> roster = new ArrayList<Trainee>();
+        double avgSolved =0;
+        int total = 0;
 
         try {
             br = new BufferedReader(new FileReader(csvFilePath));
@@ -31,7 +33,7 @@ public class CsvReader {
                 String[] name = line.split(cvsSplitBy);
 //                System.out.println(Arrays.toString(name));
                 roster.add(new Trainee(name[4].replace("\"", ""), name[5].replace("\"",
-                        ""), Integer.parseInt(name[8])));
+                        ""), Integer.parseInt(name[10])));
 
             }
 
@@ -62,8 +64,21 @@ public class CsvReader {
                 System.out.print("Shame on You !-->                           ");
                 System.out.println(student.getFirstName() + " " + student.getLastName() + " " + student.getNumberOfExercisesSolved());
             }
+
+
         }
+        int num = roster.size();
+
+        for(int i = 0; i< roster.size(); i++) {
+
+            Trainee t = (Trainee) roster.get(i);
+            total = total+t.getNumberOfExercisesSolved();
+        }
+        avgSolved = total/num;
+        System.out.println("Average number of exercises solved: "+avgSolved);
 
     }
+
+
 
 }

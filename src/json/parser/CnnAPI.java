@@ -1,5 +1,16 @@
 package json.parser;
 
+import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
+import org.bson.json.JsonParseException;
+
+import java.io.*;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.net.URLConnection;
+
 public class CnnAPI {
     /*
       You can get API_KEY from this below link. Once you have the API_KEY, you can fetch the top-headlines news.
@@ -37,4 +48,35 @@ public class CnnAPI {
 	   Store into choice of your database and retrieve.
 
      */
+    public static void main(String[] args) {
+        String MY_API_KEY="0d9e35dfa3c140aab8bf9cdd70df957f";
+        String url = "https://newsapi.org/v2/top-headlines?sources=cnn&apiKey="+MY_API_KEY;
+        try {
+            ReadingAPI(url);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void ReadingAPI(String sURL) throws IOException {
+        URL url = new URL(sURL);
+        URLConnection request = url.openConnection();
+        request.connect();
+        JsonArray jsonArray = null;
+        JsonParser jp = new JsonParser();
+        JsonElement root = jp.parse(new InputStreamReader((InputStream) request.getContent()));
+        if(root instanceof JsonObject){
+            JsonObject rootObj = root.getAsJsonObject();
+        }else{
+            jsonArray = root.getAsJsonArray();
+        }
+        for(int i = 0; i< jsonArray.size(); i++){
+            try{
+                JsonObject jsonObject = jsonArray.get(i).getAsJsonObject();
+            }catch(Exception ex){
+//                ex.printStackTrace();
+            }
+        }
+    }
+
 }

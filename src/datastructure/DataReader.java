@@ -12,9 +12,7 @@ import org.bson.Document;
 import javax.print.Doc;
 import java.io.*;
 import java.sql.*;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -46,14 +44,23 @@ public class DataReader {
 			System.out.println(msg.length()+" :: "+msg);
 		}
 
-		System.out.println("----------------------------Writing and Reading from MYSQL Database!!------------------------------");
+		System.out.println("\n----------------------------Writing and Reading from MYSQL Database!!------------------------------");
 
 		writeToMYSQL(lines, "Self_Driving_Car","sentence");
 		readFromMYSQL("select * from Self_Driving_Car;");
 
-		System.out.println("----------------------------Writing and Reading from MongoBD Database!!------------------------------");
+		System.out.println("\n----------------------------Writing and Reading from MongoBD Database!!------------------------------");
 		writeToMongoDB(lines,"self_driving_car","sentence");
 		readingMongoDbDocument("pnt","self_driving_car","sentence");
+
+		System.out.println("\n----------------------------Stack push and pop LIFO------------------------------");
+
+		popStack(pushToStack(lines));
+
+		System.out.println("\n----------------------------Linked list FIFO------------------------------");
+		popLinkedListFIFO(ListToLinkedList(lines));
+
+
 
 	}
 
@@ -184,7 +191,41 @@ public class DataReader {
 		}
 	}
 
-	public static void toStack(){
+	public static Stack pushToStack(List lines){
+		Stack<String> words = new Stack<>();
+		for(int i = 0; i< lines.size();i++){
+			String [] s = lines.get(i).toString().split(" ");
+			for(int j = 0; j< s.length; j++) {
+				words.push(s[j]);
+			}
+		}
+		return words;
+	}
 
+	public static void popStack(Stack stk){
+		int c = stk.size();
+		while(c>0){
+			System.out.println(stk.pop());
+			c--;
+		}
+	}
+
+	public static Queue<String> ListToLinkedList(List lines) {
+		Queue<String> words = new LinkedList<>();
+		for (int i = 0; i < lines.size(); i++) {
+			String[] s = lines.get(i).toString().split(" ");
+			for (int j = 0; j < s.length; j++) {
+				words.add(s[j]);
+			}
+		}
+		return words;
+	}
+
+	public static void popLinkedListFIFO(Queue wordlist){
+		int c = wordlist.size();
+		while(c>0){
+			System.out.println(wordlist.poll());
+			c--;
+		}
 	}
 }
