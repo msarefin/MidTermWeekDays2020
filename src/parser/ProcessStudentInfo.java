@@ -6,10 +6,7 @@ import org.xml.sax.SAXException;
 
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class ProcessStudentInfo {
 
@@ -59,14 +56,24 @@ public class ProcessStudentInfo {
 				seleniumStudents = xmlReader.parseData(tag, pathSelenium);
 
 				//Parse Data using parseData method and then store data into Qtp ArrayList.
-				
+				qtpStudents = xmlReader.parseData(tag,pathQtp);
+
 				//add Selenium ArrayList data into map.
+				list.put("Selenium Students",seleniumStudents);
 
 				//add Qtp ArrayList data into map.
-		
+				list.put("QTP Students",qtpStudents);
 		      	
 				//Retrieve map data and display output.
-
+				for(Map.Entry Students: list.entrySet()){
+					String title = (String)Students.getKey();
+					System.out.println(title+"\n"+"=".repeat(title.length()));
+					List Info  = (List)Students.getValue();
+					for(Object data : Info){
+						Student st = (Student)data;
+						System.out.println(st.getId()+" "+st.getFirstName()+" "+st.getLastName()+" "+xmlReader.convertIntToChar(st.getScore()));
+					}
+				}
 
 
 				//Store Qtp data into Qtp table in Database
