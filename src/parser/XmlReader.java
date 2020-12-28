@@ -5,6 +5,7 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
+import problemandsolutions.GradeSheet;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -62,9 +63,12 @@ public class XmlReader {
 	//This convert method need to be implemented.
 	public String convertIntToChar(String score){
 		String grade = "";
+
+		double d = Double.parseDouble(score);
+
+		grade = GradeSheet.grade(d);
 		
-		
-		return grade;	
+		return grade;
 	}
 	
 }

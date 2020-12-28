@@ -39,13 +39,13 @@ public class GradeSheet {
 
    public static String grade(double av){
         if(av>=90){
-            return Grades.A.name();
+            return Grades.A.name().toString();
         }else if(av>=70 && av<90){
-            return Grades.B.name();
+            return Grades.B.name().toString();
         }else if(av>=50 && av <70){
-            return Grades.C.name();
+            return Grades.C.name().toString();
         }else{
-            return Grades.F.name();
+            return Grades.F.name().toString();
         }
    }
 

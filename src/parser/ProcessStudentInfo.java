@@ -71,16 +71,20 @@ public class ProcessStudentInfo {
 					List Info  = (List)Students.getValue();
 					for(Object data : Info){
 						Student st = (Student)data;
-						System.out.println(st.getId()+" "+st.getFirstName()+" "+st.getLastName()+" "+xmlReader.convertIntToChar(st.getScore()));
+						String firstName = st.getFirstName();
+						String lastName = st.getLastName();
+						String grade = st.getScore();
+						System.out.println(st.getId()+" "+firstName+" "+lastName+" "+grade);
 					}
 				}
 
 
 				//Store Qtp data into Qtp table in Database
-				connectToMongoDB.insertIntoMongoDB(seleniumStudents,"qtp");
+				connectToMongoDB.insertIntoMongoDB(qtpStudents,"qtp");
 				//connectToSqlDB.insertDataFromArrayListToMySql(seleniumStudents, "qtp","studentList");
 
 				//Store Selenium data into Selenium table in Database
+				connectToMongoDB.insertIntoMongoDB(seleniumStudents, "selenium");
 
 				//Retrieve Qtp students from Database
                List<Student> stList = connectToMongoDB.readStudentListFromMongoDB("qtp");
@@ -89,7 +93,10 @@ public class ProcessStudentInfo {
 			   }
 
 			   //Retrieve Selenium students from Database
-
+				stList = connectToMongoDB.readStudentListFromMongoDB("selenium");
+               for(Student st: stList){
+				   System.out.println(st.getFirstName()+" "+st.getLastName()+" "+st.getScore()+" "+st.getId());
+			   }
 
 			}
 
