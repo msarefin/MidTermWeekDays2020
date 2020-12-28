@@ -2,7 +2,7 @@ package design;
 
 import java.util.Scanner;
 
-public class EmployeeInfo {
+public class EmployeeInfo extends EmployeeAbstract {
 	
  /*This class can be implemented from Employee interface then add additional methods in EmployeeInfo class.
  * Also, Employee interface can be implemented into an abstract class.So create an Abstract class
@@ -21,6 +21,9 @@ public class EmployeeInfo {
 	 * declare few static and final fields and some non-static fields
 	 */
 	static String companyName;
+	static int employeeID;
+	static String employeeName;
+
 	
 	/*
 	 * You must implement the logic for below 2 methods and 
@@ -33,10 +36,11 @@ public class EmployeeInfo {
 	 * Must implement below constructor.
 	 */
 	public EmployeeInfo(int employeeId){
-		
+		employeeID = employeeId;
 	}
     public EmployeeInfo(String name, int employeeId){
-		
+		employeeName = name;
+		employeeID = employeeId;
 	}
 	
 	/*
@@ -75,6 +79,32 @@ public class EmployeeInfo {
 
 		return total;
 	}
+
+	@Override
+	public int employeeId() {
+		return employeeID;
+	}
+
+	@Override
+	public String employeeName() {
+		return employeeName;
+	}
+
+	@Override
+	public void assignDepartment() {
+
+	}
+
+	@Override
+	public int calculateSalary() {
+		return 0;
+	}
+
+	@Override
+	public void benefitLayout() {
+
+	}
+
 	private static class DateConversion {
 
 		public DateConversion(Months months){}
@@ -134,4 +164,8 @@ public class EmployeeInfo {
 
 		}
 	}
+}
+
+  abstract class  EmployeeAbstract implements Employee{
+
 }
