@@ -5,7 +5,7 @@ Please answer the below core-java Questions:
 2.  What jdk contains or composed of and define each components?
 	- JDK stand for Java Development kit which is composed of 
 		+ javac compiler - to compiler to compile the java files to class file which contains the byte-code
-		+ javap to view the preimplementation
+		+ javap to view the pre-implementation
 		+ javadoc to convert the documentation to html file
 		+ jdb to debug the java code
 		+ JRE (Java Runtime Environment) which contains the JVM. JVM contains the class loader, Bytecode verifier, garbage collector, Security Manager, Execution Engine(JIT Compiler)
